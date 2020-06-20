@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Release build",
+            "type": "shell",
+            "command": "make",
+            "problemMatcher": [],
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "Debug build",
+            "command": "make",
+            "args": [
+                "debug"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
